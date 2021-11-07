@@ -12,7 +12,9 @@ In this folder you'll find:
 The script will be improved but I wanted to publish it just as it is now.
 When executed it will print the stats in the console, so if you ran Blender in a console (eg Bash, Windows Command Prompt, Mac Terminal) the stats will appear there.
 Otherwise you'd run the script from the Python Console window within Blender:
+
 	bpy.data.texts['Material Nodetree Stats'].as_module()
+
 If you're using a script in a Blender file other than the test file in this folder, you'll have to replace 'Material Nodetree Stats with the name of the text data-block you copied the script in.
 
 You'll also have to change the material name (3rd line of code in the script) in order to get stats about a material you want to get info about.
