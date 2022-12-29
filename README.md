@@ -43,6 +43,10 @@ It will print
 ## Missing (but planned) features
 - It works with materials nodetrees only, unless you change that in the code; I planned to make it work also with Geometry Nodes and Compositing nodetrees.
 - The nodetree can be selected changing it in the code; I planned to let the user select the nodetree in a dropdown selector.
+- I want to change it from a script to an addon.
+- Needs more well organized statistics.
+- I'd like to set a better way of printing stats.
+- I want it to print a JSON object in a text block.
 
 This script is released under the GNU General Public License v3.0 (see the LICENSE file in the same folder of this file).
 
