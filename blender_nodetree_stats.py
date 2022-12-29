@@ -1,10 +1,15 @@
-# Author: Alek Mugnozzo
-# E-mail: info@mugnozzo.net
-# Website: mugnozzo.net
-# License: GNU GPLv3.0
+# Name:         Blender Nodetree Stats
+# Author:       Alek Mugnozzo
+# Version:      1.0.0
+# E-mail:       info@mugnozzo.net
+# Website:      mugnozzo.net
+# License:      GNU GPLv3.0
+# Hosted at:    https://github.com/mugnozzo/blender_nodetree_stats
 
 import bpy
 
+# Replace the material name inside square brackets
+# with the material you want to get stats from.
 mat=bpy.data.materials['Material']
 nodes=mat.node_tree.nodes
 node_struct=[]
@@ -56,6 +61,7 @@ def ShowMessageBox(title = "Message Box", icon = 'INFO', lines=""):
 lines.append("")
 lines.append("NODES: "+str(stats['nodes']['tot_nodes']))
 lines.append("NON GROUP NODES: "+str(stats['nodes']['tot_non_group_nodes']))
+lines.append("MAX LEVEL: "+str(stats['max_level']))
 lines.append("")
 lines.append("NUMBER OF NODES grouped by NODE TYPE")
 for k,v in stats['node_types'].items():
