@@ -40,7 +40,7 @@ It will print
 	- the maximum group level (0 is the first level);
 	- the number of nodes of each type.
 
-## Missing (but planned) features
+## Missing features
 - It works with materials nodetrees only, unless you change that in the code; I planned to make it work also with Geometry Nodes and Compositing nodetrees.
 - The nodetree can be selected changing it in the code; I planned to let the user select the nodetree in a dropdown selector.
 - I want to change it from a script to an addon.
